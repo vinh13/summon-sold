@@ -1,0 +1,108 @@
+#wrapper {
+    background-color: rgb(15, 27, 39) !important;
+}
+
+#content {
+    margin-top: 90px;
+}
+
+/* menu bar */
+.transparent  {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: rgb(15, 27, 39) !important;
+    
+}
+
+.transparent .smaller {
+    color: rgb(113, 146, 176);
+}
+
+.logo, .logo-2 {
+    width: 40px;
+    height: 40px;
+    margin: 0px;
+}
+
+.vimeo-banner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.vimeo-wrapper {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+    overflow: hidden;
+ }
+
+ .vimeo-wrapper iframe {
+    width: 100vw;
+    height: 56.25vw; /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
+    min-height: 100vh;
+    min-width: 177.77vh; /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
+    position: absolute;
+    top: 66%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+ }
+
+
+ /* section gameplay */
+ .section-gameplay {
+    background: #f6f6f6;
+    position: relative;
+    padding: 0 24px;
+ }
+
+ .sectionBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+ }
+
+.vimeo-background {
+    /* background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 100% 100%; */
+    width: 100%;
+    height: 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.vimeo-gameplay {
+        /* position:  relative; */
+        width: 59%;
+        height: 100%;
+        border: 4px solid transparent;
+        border-image-source: linear-gradient(to bottom,#FFFDF0 0%,#FBEBC1 14%,#E6C675 25%,#F6DF6E 40%,#B27E18 60%,#DEAB61 73%,#A67B4B 85%,#664320 100%);
+        border-image-slice: 1;
+        background: linear-gradient(to bottom,#FFFDF0 0%,#FBEBC1 14%,#E6C675 25%,#F6DF6E 40%,#B27E18 60%,#DEAB61 73%,#A67B4B 85%,#664320 100%); */
+ }
+
+ .vimeo-gameplay iframe {
+     align-items: center;
+     width: 100%;
+     height: 100%;
+ }
+
+ /* .vimeo-gameplay iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(7.42px * 100);
+    height: calc(7.42px * 56.25);
+    min-height: calc(4.17px * 100);
+    min-width: calc(4.17px * 177.77);
+ } */
