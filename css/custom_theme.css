@@ -1,3 +1,23 @@
+html{
+    scrollbar-width:thin;
+    scrollbar-color:#3d5a74 #1d2f41
+}
+::-webkit-scrollbar{
+    width:10px;height:10px
+}
+::-webkit-scrollbar-track
+{
+    background:#1d2f41
+}
+::-webkit-scrollbar-thumb
+{
+    background:#3d5a74;
+    box-shadow:inset 0 0 0 2px #1d2f41;
+}
+::-webkit-scrollbar-corner{
+    background-color:#1d2f41;
+}
+
 #wrapper {
     background-color: rgb(15, 27, 39) !important;
 }
